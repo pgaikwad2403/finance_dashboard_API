@@ -17,12 +17,10 @@ const app = express();
 app.use('/budget', budget);
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 let port = 8000;
 
 app.listen(port, () => {
-
-    console.log('Server is up and listening to ' + port)
+  console.log('Server is up and listening to ' + port);
 });
-
